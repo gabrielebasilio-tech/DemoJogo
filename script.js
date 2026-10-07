@@ -95,14 +95,14 @@ function selectWinner() {
         setTimeout(() => {
             resultBox.classList.add("show");
             playBoard.classList.remove("show");
-            wonText.innerHTML = `Player <p>${playerSign}</p> won the game!`;
+            wonText.innerHTML = `Jogador <p>${playerSign}</p>Ganhou o jogo!`;
         }, 700);
     } else if ([...allBox].every(box => box.id)) { // Check for a draw
         runBot = false;
         setTimeout(() => {
             resultBox.classList.add("show");
             playBoard.classList.remove("show");
-            wonText.textContent = "Match has been drawn!";
+            wonText.textContent = "A partida terminou empatada!";
         }, 700);
     }
 }
